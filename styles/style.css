@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+ 
+}
+
+html {
+    font-size: 10px; /* definir uma font-size padrão */
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+p {
+    color: white;
+    font-size: 16px;
+
+}
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 24px;
+    color:#f5e753;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 16px;
+    color:#5c4c9a;
+}
+.navbar{
+    align-content: center;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 2rem;
+    font-weight: 500; 
+} 
+main {
+    width: 100%;
+    
+}
+#p-aparece{
+    display: none;
+}
+
+#card-aparece{
+    display: none;
+    height: 500px;
+    
+}
+
+.cj-icone{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.icone {
+    font-size: 3rem;
+    color:#5c4c9a;
+}
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+    width: 100%;
+}
+
+/* define o tamanho da caixa */
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 960px;
+   
+}
+.bg-personalizado{
+    background-color:#5c4c9a;
+
+}
+.meu-card{
+    background-color: black;
+    color: white;
+
+
+}
+
+.container-personalizado{
+    margin-top: 110px;
+}
+.header {
+    min-height: 80vh;
+    height: 300px;
+    background: url(../styles/bg-banner-claro_Prancheta\ 1.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    padding: 11rem 2rem 5rem 2rem;
+    color: white;
+    background-blend-mode: overlay;
+    
+}
+
+.principal__titulo {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+/* --- FOOTER --- */
+.rodape {
+    background-color: #323534;
+    color: white;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .8rem;
+}
+
+.rodape__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.rodape__principal > * {
+    margin: 1rem 0;
+}
+
+.rodape__navegacao > li {
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+
+.rodape__navegacao a {
+    transition: all .5s;
+}
+
+.rodape__navegacao a:hover {
+    color:#5c4c9a;
+}
+
+.rodape__logo {
+    max-width: 200px;
+}
+
+.rodape__redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.rodape__redes-sociais a:hover {
+    color:#5c4c9a;
+}
+
+.rodape__redes-sociais img {
+    max-width: 10px;
+    margin-right: .5rem;
+}
+
+.rodape__redes-sociais span {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.rodape__cc {
+    width: 100%;
+    background-color: #292A2A;
+    font-size: 5px;
+    color: white;
+    opacity: 0.5;
+    text-align: center;
+}
