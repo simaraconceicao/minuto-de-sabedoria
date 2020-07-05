@@ -1,107 +1,42 @@
 // Capturando o DOM
-const recado = document.getElementById('p-some')
-console.log(recado)
 
-const titulo = document.getElementById('titulo')
+let cards = document.getElementById('cards')
+let icones = document.getElementById('icones')
+let some = document.getElementById('p-some')
+let aparece = document.getElementById('p-aparece')
+let titulo = document.getElementById('titulo')
 
-const setRecado = document.getElementById('p-aparece')
-console.log(setRecado)
+let conteudoHtml = document.getElementById('content-html')
+let conteudoLogica = document.getElementById('content-logica')
+let conteudoCss = document.getElementById('content-css')
 
-const divona = document.getElementById('cj-icone')
-console.log(divona)
-
-const setDivona = document.getElementById('card-aparece')
-console.log(setDivona)
-
-const contentHtml = document.getElementById('content-html')
-console.log(contentHtml)
-
-const logica = document.getElementById('logica')
-console.log(logica)
-
-const css = document.getElementById('css')
-console.log(css)
-
-const git = document.getElementById('git')
-console.log(git)
-
-const github = document.getElementById('github')
-console.log(github)
-
-const javascript = document.getElementById('javascript')
-console.log(javascript)
-
-const api = document.getElementById('api')
-console.log(api)
-
-const react = document.getElementById('react')
-console.log(react)
-
-const firebase = document.getElementById('firebase')
-console.log(firebase)
 
 // consumindo dados
-const db = fetch('https://my-json-server.typicode.com/simaraconceicao/base-minuto/db')
+fetch('https://my-json-server.typicode.com/simaraconceicao/base-minuto/html')
   .then(response => response.json())
-  .then(json => console.log(json))
-  
-
-fetch(' https://my-json-server.typicode.com/simaraconceicao/base-sabedoria/db')
-  .then(response => response.json())
-  .then(json => console.log(json))
-  
-  
-
- 
+  .then(data => console.log(data[Math.floor(Math.random() * data.length)]))
 
 
 
-// Escutando o click do icone
-contentHtml.addEventListener('click', function(e){
+conteudoHtml.addEventListener('click', function(){
+  console.log('clickei')
+  icones.style.display = 'none'
+  cards.style.display = 'block'
+  some.style.display = 'none'
+  titulo.style.display = 'none'
+  aparece.style.display = 'block'
+  // const{title, description, img, url} = data
 
-    recado.style.display = "none"
-    titulo.style.display = "none"
-    setRecado.style.display = "block"
-    setDivona.style.display = "block"
-    divona.style.display = "none"
+  //   document.getElementById(card__img) = img
+  //   document.getElementById(card__title) = title
+  //   document.getElementById(card__description) = description
+  //   document.getElementById(card__url) = url
 
+})   
     
-    function criarCard(){
-        
-
-    }
-    
-        
-})
-
-// 2 - escuto o click do icone
 
 
-// logica
-// css
-// javaScript
-// git
-// github
-// api
-// react
-// firebase
 
-// 3 - dou um display none na divona completa
-// leio o json
-// faço um sorteio randomico dos id's
-// dou um display block na div vazia 
-
-// create element 
-// card
-// botão voltar
-// inserindo os dados
-// appendchild
-// um card com os elementos do obj de acordo com o id sorteado
-
-// title
-// description
-// img
-// url
 
 
 // botão voltar 
