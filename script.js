@@ -1,6 +1,5 @@
 // Capturando o DOM
 
-let cards = document.getElementById('cards')
 let icones = document.getElementById('icones')
 let some = document.getElementById('p-some')
 let aparece = document.getElementById('p-aparece')
@@ -11,33 +10,54 @@ let conteudoLogica = document.getElementById('content-logica')
 let conteudoCss = document.getElementById('content-css')
 
 
-// consumindo dados
-fetch('https://my-json-server.typicode.com/simaraconceicao/base-minuto/html')
-  .then(response => response.json())
-  .then(data => console.log(data[Math.floor(Math.random() * data.length)]))
 
 
 
+// Escutando o click HTML, pegando os dados e  manipulando o DOM
 conteudoHtml.addEventListener('click', function(){
   console.log('clickei')
-  icones.style.display = 'none'
-  cards.style.display = 'block'
-  some.style.display = 'none'
-  titulo.style.display = 'none'
-  aparece.style.display = 'block'
-  // const{title, description, img, url} = data
+  
+ 
 
-  //   document.getElementById(card__img) = img
-  //   document.getElementById(card__title) = title
-  //   document.getElementById(card__description) = description
-  //   document.getElementById(card__url) = url
+  // consumindo dados
+  fetch('https://my-json-server.typicode.com/simaraconceicao/base-minuto/html')
+    .then(response => response.json())
+    .then(data => {
+      const dataCard= document.getElementById("cards")
+      console.log(dataCard, "qualquer texto")
+      let card = " "
+      
+      data.forEach(item => {
+         card+= 
+          `<div class="card">
+            <img id="card__img" src="${item.img}" alt="">
+            <h3 id="card__title">${item.title}</h3>
+            <p id="card__description">${item.description}</p>
+            <a id="card__url" class="button" href="${item.url}" target="_blank">Saiba Mais</a>
+          </div>`  
+          
+             
+        });    
+       
+        console.log(dataCard)
+        dataCard.innerHTML = card     
+      
 
-})   
+    })
+
+  
     
 
+})   
+
+// data
 
 
 
 
+
+
+
+//data[Math.floor(Math.random() * data.length)]
 // botão voltar 
 // none no card e volta cj-icones

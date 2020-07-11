@@ -59,8 +59,8 @@ main {
 }
 
 #cards{
-    display: none;
-    height: 500px;
+    display: flex;
+    
     
 }
 
@@ -208,7 +208,7 @@ main {
   .card > img:first-child {
     border-radius: 7px 7px 0 0;
     margin-bottom: 20px;
-    max-width: 100%;
+    max-width: 400px;
     height: auto;
   }
   
