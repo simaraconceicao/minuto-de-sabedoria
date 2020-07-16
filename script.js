@@ -58,6 +58,6 @@ conteudoHtml.addEventListener('click', function(){
 
 
 
-//data[Math.floor(Math.random() * data.length)]
+//
 // botão voltar 
 // none no card e volta cj-icones

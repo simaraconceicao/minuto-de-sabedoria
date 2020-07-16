@@ -58,11 +58,11 @@ main {
     display: none;
 }
 
-#cards{
+/* #cards{
     display: flex;
     
     
-}
+} */
 
 .cj-icone{
     margin-top: 2.5rem;
@@ -194,10 +194,11 @@ main {
 
 .card-row {
     display: grid;
-    grid-template-columns: repeat(3, 32%);
-    justify-content: space-between;
+    grid-template-columns: repeat(2, 32%);
+    /* justify-content: space-between; */
 }
 .card {
+    width: 550px;
     margin: 30px;
     padding: 20px;
     border: 1px solid #c9c9c9;
@@ -216,7 +217,7 @@ main {
     color: rebeccapurple;
     display: grid;
     grid-template-columns: 1fr auto;
-    align-items: start;
+    align-items: center;
   }
   
   .card h3 em {
@@ -228,6 +229,7 @@ main {
   .card p {
     color: #757575;
     line-height: 1.5;
+    width: 350px;
   }
   
   .button {
