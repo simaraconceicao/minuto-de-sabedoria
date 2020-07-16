@@ -1,4 +1,4 @@
-# quero ser <dev>
+# quero ser &lt dev &gt
 
 Neste site, compartilho os primeiros passos dos aprendizados para quem deseja inciar no mundo de desenvolvimento front-end.
 
