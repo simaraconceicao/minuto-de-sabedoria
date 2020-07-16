@@ -1,17 +1,6 @@
 // Capturando o DOM
 
-let icones = document.getElementById('icones')
-let some = document.getElementById('p-some')
-let aparece = document.getElementById('p-aparece')
-let titulo = document.getElementById('titulo')
-
 let conteudoHtml = document.getElementById('content-html')
-let conteudoLogica = document.getElementById('content-logica')
-let conteudoCss = document.getElementById('content-css')
-
-
-
-
 
 // Escutando o click HTML, pegando os dados e  manipulando o DOM
 conteudoHtml.addEventListener('click', function(){
@@ -26,7 +15,7 @@ conteudoHtml.addEventListener('click', function(){
       const dataCard= document.getElementById("cards")
       console.log(dataCard, "qualquer texto")
       let card = " "
-      
+      //passando para o html
       data.forEach(item => {
          card+= 
           `<div class="card">
@@ -50,14 +39,5 @@ conteudoHtml.addEventListener('click', function(){
 
 })   
 
-// data
 
 
-
-
-
-
-
-//
-// botão voltar 
-// none no card e volta cj-icones

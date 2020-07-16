@@ -58,11 +58,16 @@ main {
     display: none;
 }
 
-/* #cards{
-    display: flex;
+#cards{
+    padding: 200px;
+    padding-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    /* justify-content: center; */
     
-    
-} */
+}
+
+
 
 .cj-icone{
     margin-top: 2.5rem;
@@ -192,13 +197,13 @@ main {
     text-align: center;
 }
 
-.card-row {
+/* .card-row {
     display: grid;
-    grid-template-columns: repeat(2, 32%);
-    /* justify-content: space-between; */
-}
+    grid-template-columns: repeat(3, 10%);
+    justify-content: space-between;
+} */
 .card {
-    width: 550px;
+    width: 448px;
     margin: 30px;
     padding: 20px;
     border: 1px solid #c9c9c9;
@@ -243,33 +248,57 @@ main {
     display: inline-block;
   }
 
-/* .aparece{
-
-
-}
-#card__img{
-
-}
-#card__title{
-
-}
-#card__description{
-
-}
-#card__url{
-
-}
-
-@media (max-width: 414px) {
-    .aparece{
+  @media (max-width: 768px) {
+    #cards{
+       display: grid;
+       grid-template-columns: repeat(1, 100%);
+       padding: 18px;
     }
+    .card {
+        align-items: center;
+        width: 358px;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #c9c9c9;
+        border-radius: 7px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+      }
+      
+      .card > img:first-child {
+        border-radius: 7px 7px 0 0;
+        margin-bottom: 20px;
+        max-width: 335px;
+        height: auto;
+      }
+      
+      .card h3 {
+        color: rebeccapurple;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+      }
+      
+      .card h3 em {
+        padding: 0.25em;
+        background-color: #eddbff;
+        border-radius: 4px;
+      }
+      
+      .card p {
+        color: #757575;
+        line-height: 1.5;
+        width: 300px;
+      }
+      
+      .button {
+        /* Reset text link default */
+        text-decoration: none;
+      
+        background-color: rebeccapurple;
+        color: #fff;
+        padding: 0.5em 1em;
+        border-radius: 4px;
+        display: inline-block;
+      }
 }
-@media (max-width: 768px)  {
-    .aparece{
-    }
-}
-@media (max-width: 1024px)  { 
-    .aparece{
-    }
-}
-     */
+
